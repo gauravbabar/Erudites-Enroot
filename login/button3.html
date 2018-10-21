@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+	 
+.button{
+             background-color: transparent;
+			 color: #FFFFFF;
+			 text-align: center;
+             font-size: 18px;
+			 border: 3px solid #e7e7e7;
+			 cursor: pointer;
+			 border-radius:3px;
+			 padding: 13px;
+             width: 200px;
+			 height: 60px;
+			 z-index: 100;
+			 }
+			 
+.button:hover{
+             background-color: transparent;
+			 }
+			 
+.button span {
+             cursor: pointer;
+             display: inline-block;
+             position: relative;
+             transition: 0.5s;
+}
+
+.button span:after {
+             content: '\00bb';
+             position: absolute;
+             right: -20px;
+             opacity: 0;
+             top: 0;
+             transition: 0.5s;
+}
+
+.button:hover span {
+             padding-right: 25px;
+}
+
+.button:hover span:after {
+             opacity: 1;
+             right: 0;
+}
+</style>
+</head>
+<body background="xsmall.img.jpg" width="100%">
+<button class="button" class="button" style="vertical-align:middle"><span>LEARN MORE</span></button
+</body>
+</html>

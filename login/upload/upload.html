@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Module name</title>
+    <link rel="stylesheet" type="text/css" href="upload.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+        <h2>Module name</h2>
+            <p>Here is the module description</p>
+
+            <div class="tab">
+            <button class="tablinks" onclick="tabs(event, 'Notes')">Notes</button>
+            <button class="tablinks" onclick="tabs(event, 'Videos')">Videos</button>
+            <button class="tablinks" onclick="tabs(event, 'Other')">Other</button>
+            </div>
+
+            <div id="Notes" class="tabcontent">
+            <h3>Notes</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis urna non luctus eleifend. Mauris vulputate, odio ac fringilla facilisis, velit tortor placerat neque, sed placerat felis dolor non sapien. In bibendum, neque vitae placerat congue, ipsum libero aliquet sapien, non sollicitudin enim mi id tortor. Suspendisse volutpat ante eget commodo dapibus. Nullam vitae hendrerit magna. Aenean metus turpis, tempus eget suscipit sit amet, posuere at ligula. Sed blandit sagittis risus, in viverra sapien. Vivamus faucibus dolor quis erat viverra vulputate. Phasellus ut ornare ex. Pellentesque consectetur felis sit amet est semper ornare eget sed nisl. Quisque felis leo, accumsan in quam nec, scelerisque laoreet dui. Nam laoreet turpis nisl, id facilisis odio convallis et.
+
+Donec sodales ullamcorper sollicitudin. Duis luctus condimentum libero, quis lobortis risus tempus fermentum. Aliquam cursus dapibus sem, ac consectetur velit aliquet quis. Sed a lacus varius, imperdiet ipsum quis, rutrum erat. Curabitur vitae erat dapibus risus porta viverra a id metus. Integer quis orci tempor, venenatis ante tincidunt, sagittis lorem. Quisque id odio vel ex consequat semper in ac purus. Quisque tincidunt, nibh imperdiet pellentesque vehicula, enim purus venenatis enim, tempor tempor magna nibh quis nulla. Duis nec viverra diam. Nulla lorem velit, tristique eget ultrices ut, luctus non lectus. Aliquam erat volutpat. Etiam eget urna ut eros faucibus placerat elementum vitae lorem. Vivamus interdum sagittis sagittis. Aenean dolor lacus, auctor a orci et, congue dignissim erat. Etiam porta diam nulla, vel posuere eros blandit in.
+
+In quis ligula quam. Sed tempus nec neque ut rhoncus. Suspendisse ornare pretium pharetra. Maecenas magna diam, fringilla et blandit sit amet, ornare sed nunc. Etiam ante neque, pellentesque fringilla nulla a, tincidunt luctus est. Sed non feugiat felis, nec semper libero. Cras at libero iaculis, mattis nunc at, posuere nulla. Praesent aliquam, lorem in vestibulum malesuada, leo ligula dictum elit, vitae lacinia neque urna non massa. Sed facilisis ipsum in nulla aliquam, in sagittis leo ultrices. Suspendisse potenti. Proin tristique lacus in diam consequat, eu mattis lorem fringilla. Cras ut tellus luctus, tristique enim sed, convallis neque. Aenean ut ante mi. Pellentesque vel dignissim arcu. Nam convallis urna a eros imperdiet luctus. </p>
+            </div>
+
+            <div id="Videos" class="tabcontent">
+            <h3>Videos</h3>
+                <div class="videos">
+
+                </div>
+                <div class="videos">
+
+                </div>
+                <div class="videos">
+
+                </div>
+
+            </div>
+
+            <div id="Other" class="tabcontent">
+            <h3>Other</h3>
+            <div class="other">
+
+            </div>
+            <div class="other">
+
+            </div>
+            <div class="other">
+
+            </div>
+
+            </div>
+
+    </div>
+
+
+<input type="image" src="star.png" style="width:40px; height:40px; padding-left:20px; padding-right:20px;"/>
+<button class="button star" >Upload</button>
+    <script>
+function tabs(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+function myFunction(x) {
+    x.classList.toggle("fa-thumbs-down");
+}
+</script>
+  </body>
+</html>

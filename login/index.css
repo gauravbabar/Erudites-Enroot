@@ -1,0 +1,196 @@
+@font-face {
+  font-family: YatraOne;
+  src: url(YatraOne-Regular.ttf);
+}
+
+body {
+  margin: 0px;
+  font-family: YatraOne;
+  color: white;
+}
+
+
+
+/*-- Navigation bar --*/
+
+	nav {
+	margin: 0;
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	top: 0;
+	background-color: rgba(17,17,17,0.7);
+	padding: 0px;
+	transition: all 1s ease;
+	text-align: right;
+	z-index: 1;
+	}
+
+	nav.hidden{
+	-webkit-transform: translate3d(0,-100%,0);
+	}
+
+	nav ul li {
+	display: inline-block;
+	margin-right: 60px;
+	}
+
+	nav ul li:last-child{
+	margin-right: 0;
+	}
+
+	nav ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	}
+
+	.content {
+	height: 2000px;
+	background-color: rgb(200,200,250);
+	}
+
+
+div.a {
+  height:100%;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+
+/*searchbar start*/
+.search-bar{
+  background-color: #7b1fa2;
+  background-image: url("book.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.search{
+  position: relative;
+  float: left;
+  top: 50%;
+  left: -20%;
+}
+
+
+h2{
+  display:inline;
+  font-size: 60px;
+  color: white;
+  font-family: YatraOne;
+  position: relative;
+  float: left;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+        }
+
+        input[type=text] {
+      width: 234px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+
+      background-size: 25px 25px;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+  }
+
+  input[type=text]:focus {
+      width: 100%;
+  }
+/*searchbar end*/
+
+/* Select University start*/
+.select-uni{
+  background-image: url("backgrounds/uni.png");
+  background-size: 100% 100%;
+  font-family: YatraOne;
+  font-size: 60px;
+  color: white;
+
+}
+
+
+#img_cont {
+  display: table;
+  width: 90%;
+  margin: 20px auto;
+   border-radius: 25%;
+	 font-size: 20px;
+}
+
+#img_cont a {
+
+  display: table-cell;
+  text-align: center;
+  width: 16%;
+   border-radius: 50%;
+   padding-left: 20px;
+}
+
+#img_cont img {
+	opacity:1.0;
+  width: 100%;
+  max-width: 150px;
+ border-radius: 25%;
+ border: 0px solid black;
+ transition:all 0.3s ease;
+}
+
+#img_cont img:hover{
+opacity: 0.5;
+}
+
+
+.parallax-1 {
+		background: url('backgrounds/uni.png') repeat fixed 100%;
+		text-align: center;
+		background-position: center;
+		background-size: cover;
+	}
+
+a{color: white;}
+/* Select University end*/
+/* Process */
+.process{
+  background-color: #2C2C2C;
+}
+h2.top{
+  display:inline;
+  font-size: 60px;
+  color: white;
+  font-family: YatraOne;
+  position: relative;
+  float: left;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Process end */
+
+.what{
+  background-image: url("img/113962.jpg");
+  background-size: 100% 100%;
+  font-family: YatraOne;
+  font-size: 40px;
+  color: white;
+}
+.what-are-u-waiting-for{
+  display:inline;
+  font-size: 80px;
+  color: white;
+  font-family: YatraOne;
+  text-shadow: 2px 4px black;
+  position: relative;
+  float: left;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

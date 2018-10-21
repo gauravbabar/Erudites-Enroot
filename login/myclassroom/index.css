@@ -1,0 +1,29 @@
+.wiki{
+    border: 1px solid blue;
+}
+.My_Class{
+    float: center;
+  background-color: #4CAF50;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+
+}
+.My_Subject{
+    background-color: aqua;
+    color:mediumvioletred;
+    border: 1px solid red;
+    
+}
+.Subject{
+    background-color: green;
+    color:red;
+    text-decoration:underline;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 14px 16px;
+    border: 1px solid red;
+}

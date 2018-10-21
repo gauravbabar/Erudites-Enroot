@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Login</title>
+      <link rel="stylesheet" href="LOGIN.css">
+	  <!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+	<!-- Scripts -->
+	<script src="index.js"></script>
+	<SCRIPT LANGUAGE="javascript" TYPE="text/javascript"
+SRC="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</SCRIPT>
+<SCRIPT LANGUAGE="javascript" TYPE="text/javascript"
+SRC="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js">
+</SCRIPT>
+<SCRIPT>
+$(function() {
+ $("form[name='login']").validate({
+ rules: {
+ uname: {
+required: true,
+email: true
+ },
+ pass1: {
+required: true,
+minlength: 6
+ }
+ },
+ messages: {
+ uname: {
+required: "Please provide a email address",
+email: "Please enter a valid email address"
+},
+ pass1: {
+required: "Please provide a password",
+minlength: "Your password must be at least 6 characters long"
+ }
+ },
+ submitHandler: function(form) {
+ form.submit();
+ }
+ });
+});
+</SCRIPT>
+
+  <SCRIPT>
+$(function() {
+ $("form[name='sign_up']").validate({
+ rules: {
+ fname: "required",
+ lname: "required",
+ user: {
+required: true,
+email: true
+ },
+ pass: {
+required: true,
+minlength: 6
+ },
+  pass2: {
+required: true,
+minlength: 6
+ },
+
+user: {
+required: "Please provide a email address",
+email: "Please enter a valid email address"
+},
+ pass: {
+required: "Please provide a password",
+minlength: "Your password must be at least 6 characters long"
+ },
+ pass2: {
+required: "Please provide a password",
+minlength: "Your password must be at least 6 characters long"
+ },
+ submitHandler: function(form) {
+ form.submit();
+ }
+ });
+});
+</SCRIPT>
+
+</head>
+
+<body>
+
+<div class="container">
+
+</div>
+<div class="form">
+
+
+
+	   <div class="info">
+<h2>Login form</h2>
+</div>
+
+  <form class="register-form" name="sign_up" id="151" action="connect.php" method="post">
+
+      <b>FIRST NAME<span>*</span></b><br>
+     <input type="text" name="fname" id="fname" placeholder="FIRST NAME" required="required"/><br><br>
+
+	 <b>LAST NAME<span>*</span></b><br>
+     <input type="text" name="lname" id="lname" placeholder="LAST NAME" required="required"/><br><br>
+
+	 <b>USERNAME<span>*</span></b><br>
+	  <input type="email" name="user" id="user" placeholder="EMAIL ADDRESS" required="required"/><br><br>
+
+	   <b>PASSWORD<span>*</span></b><br>
+	  <input type="password" name="pass" id="pass" placeholder="PASSWORD" required="required"/><br><br>
+
+	  <b>RE-ENTER PASSWORD<span>*</span></b><br>
+	  <input type="password" name="pass2" id="pass2" placeholder="CONFIRM PASSWORD" required="required"/><br><br><br>
+
+
+
+			  <button type="submit" class="button">CREATE</button>
+    <!--<input type="button" onclick="val(form)" class="button" value="CREATE">-->
+    <p class="message">Already registered? <a href="#152">Sign In</a></p>
+
+  </form>
+  <form class="login-form" name="login" id="152" action="login.php" method="post">
+    <input type="text" placeholder="username" name="uname" id="uname"><br><br>
+    <input type="password" placeholder="password" name="pass1" id="pass1"><br>
+	<a class="forget" href="forp.php">forget your password?</a><br><br>
+	<button type="submit" class="button2"/>LOGIN</button>
+
+    <p class="message">Not registered? <a href="#151">Create an account</a></p>
+	 </form>
+
+</div>
+
+    <script src="index.js"></script>
+
+	<!--Cookies -->
+	<script type="javascript" language="javascript">
+		document.cookie = "username=sign_up.user.value";
+	</script>
+	<!--Cookies -->
+
+</body>
+</html>
